@@ -1,0 +1,54 @@
+<div fxLayout="column" fxLayoutAlign="center center" fxFlexFill fxLayoutGap="20px">
+  <img src="{{ logo }}" >
+  <label class="emel-gray" ><h5>Bem-vindo ao meu perfil EMEL</h5> </label>
+  <mat-card>
+    <mat-tab-group>
+      <mat-tab label="E-mail"> 
+        <form fxLayout="column">
+          <mat-form-field>
+            <mat-label>Enter your email</mat-label>
+            <input
+              matInput
+              placeholder="exemplo@exemplo.com"
+              [formControl]="email"
+              required
+            />
+            <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Enter your passWord</mat-label>
+            <input type="password" matInput placeholder="******" required />
+            <mat-error>{{ getErrorMessage() }}</mat-error>
+          </mat-form-field>
+          <small>*Preenchimento obrigatório</small>
+          <label for="">
+            Faça Login com o seu perfil ePark/GIRA. Se ainda não tiver, faça um novo registo para poder aceder à sua conta na EMEL.
+          </label>
+          <div fxLayoutGap="20px" fxLayout="column" fxFlex="15" >
+            <div fxLayoutAlign="center center" >
+              <button class="btn-blue" type="submit" mat-raised-button >ENTRAR</button>
+            </div>
+            
+            <div fxLayout="row" fxLayoutAlign="center center" >
+                <button class="secondaryBtn" mat-raised-button color="primary">RECUPERAR CONTA</button>
+                <button class="secondaryBtn" fxFlexOffset="20px" mat-raised-button color="primary">REGISTAR</button>
+            </div>
+          </div>
+          <div fxLayout="column">
+              <label for="">Precisa de ajuda? Ligue-nos!</label>
+              <label for="">211 163 060</label>
+          </div>
+        </form>
+        
+      </mat-tab>
+      <mat-tab label="Gov.Pt">
+        <ng-template mat-tab-label>
+         <img class="iconTab" src="/assets/iconGovPt_20x20.png" alt="">
+         Gov.Pt
+        </ng-template>
+        ishdbishbdicsnd
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+</div>
+

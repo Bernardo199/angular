@@ -1,0 +1,11 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .logo{
+    width: 2.5rem;
+    margin-left: 10px;
+  }
+
+  .header{
+    background-color: #004f6d;
+  }

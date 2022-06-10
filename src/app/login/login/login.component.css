@@ -1,0 +1,35 @@
+body{
+    padding: 20;
+}
+.emel-gray {
+    color: #98a4ae;
+  }
+  .emel-logo {
+    height: 100px;
+    margin: 15px;
+  }
+  img{
+    height: 5rem;
+  }
+  h5{
+    font-size: 1.25rem;
+  }
+  .iconTab{
+      height: fit-content;
+  }
+  .btn-blue {
+    background-color: #004f6d;
+    color: #fff !important;
+    border-radius: 0%;
+    width: 304px;
+  }
+  .secondaryBtn {
+    font-size: 12px;
+    font-family: GothamRnd-Medium;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #7fba00;
+    margin-bottom: 2.5px;
+    border-radius: 0%;
+    width: 145px;
+  }
